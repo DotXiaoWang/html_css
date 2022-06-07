@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<link rel="icon" href="graph/icon.png">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>疫情学习</title>
+		<meta name="keywords" content="疫情学习">
+		<meta name="description" content="疫情学习">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/video_style.css" rel="stylesheet">
+		<style>
+			.vid-wrap{
+				width:100%;background: #000;
+				position:relative;
+				padding-bottom:56.25%;    /*需要用padding来维持16:9比例,也就是9除以16*/
+				height: 0;
+			}
+			.vid-wrap video{
+				position: absolute;
+				top:0;
+				left: 0;
+				width: 100%;
+				height: 100%
+			}
+		</style>
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="head_bg"></div>
+</header>
+<div class="container">
+<article>
+    <div class="title_2">
+		<img src="graph/title.png" class="img-responsive pic_center">
+	</div>
+    <div class="content_bg">
+        <h3>疫情学习</h3>
+        <div class="clear"></div>
+        <div class="row">
+                <div class="col-md-9 col-lg-12">
+                    <div class="xy_title7"><br><br>
+						<div>
+							<h4>塞尔维亚总统宣布进入紧急状态：寄希望于中国技术与物资援助</h4>
+							<div class="vid-wrap">
+								<video id="video_1-1" controls="controls" controlslist="nodownload" preload="metadata" x5-playsinline="" playsinline="" webkit-playsinline="">
+									<source src="videos/saierweiya.mp4" type="video/mp4">
+								</video>
+							</div>
+							<br> 
+						</div>
+                     <br>
+						<div>
+							<h4>纽约州长：学中国吧！动用国家力量抗击疫情</h4>
+							<div class="vid-wrap">
+								<video id="video_1-2" controls="controls" controlslist="nodownload" preload="metadata" x5-playsinline="" playsinline="" webkit-playsinline="">
+									<source src="videos/xuezhongguo.mp4" type="video/mp4">
+								</video>
+							</div>
+							<br> 
+						</div>
+                     <br>
+                     
+						<div>
+							<h4>纽约时报记者谈中国抗疫：没有生命，何谈自由与幸福</h4>						
+							<div class="vid-wrap"><video id="video_1-3" controls="controls" controlslist="nodownload" preload="metadata" x5-playsinline="" playsinline="" webkit-playsinline="">
+								<source src="videos/niuyue.mp4" type="video/mp4">
+								</video>
+							</div>
+							<br> 
+						</div>
+                      <br>
+                </div> 
+            </div>
+					
+        
+         <div class="col-md-12"><a href="index.html"><strong>返回首页</strong></a></div>
+    </div>
+        <div class="clear"></div> 
+        </div>   
+</article>
+<div class="clear"></div>
+<script>
+myVid = document.getElementById("video_1-1");
+var num = 0;
+myVid.addEventListener("play", function () {
+	num = num + 1;
+      myVid.play();
+     document.tjform.videoid.value="video_1-1";
+     document.tjform.videonum.value=num;
+     document.tjform.submit();
+});
+myVid2 = document.getElementById("video_1-2");
+var num2 = 0;
+myVid2.addEventListener("play", function () {
+	num2 = num2 + 1;
+      myVid2.play();
+      document.tjform.videoid.value="video_1-2";
+     document.tjform.videonum.value=num2;
+     document.tjform.submit();
+});
+myVid3 = document.getElementById("video_1-3");
+var num3 = 0;
+myVid3.addEventListener("play", function () {
+	num3 = num3 + 1;
+      myVid3.play();
+      document.tjform.videoid.value="video_1-3";
+     document.tjform.videonum.value=num3;
+     document.tjform.submit();
+});
+</script>
+<iframe name="targetIfr" style="display:none"></iframe>
+</div>
+<footer class="container-fluid"><div class="footer">根据需要进行修改</div></footer>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="js/jquery.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
